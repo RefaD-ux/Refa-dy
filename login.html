@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            flex-direction: column;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .welcome-text {
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            margin-right: 40px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            animation: bounce 1.5s infinite alternate;
+        }
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+        .hubungi-box {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            width: 320px;
+        }
+        .hubungi-box h2 {
+            color: white;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: linear-gradient(to right, #0072ff, #00c6ff);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-text">HELLOOO!! <br> Selamat Datang ◜ ‿ ◝</div>
+        <div class="hubungi-box">
+            <h2></h2>
+            <form action="cv.html" method="GET">
+                <input type="text" placeholder="Nama">
+                <input type="email" placeholder="Email" >
+                <select >
+                    <option value="" disabled selected>Pilih Jenis Kelamin</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                    <option value="Lainnya">Lainnya</option>
+                </select>
+                <input type="date">
+                <textarea placeholder="Pesan" rows="4"></textarea>
+                <button type="submit" class="btn">Kirim</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

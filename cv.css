@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .profile-container p {
+        font-size: 14px; /* Perbesar teks  */
+        line-height: 1.6; /* Supaya lebih rapi */
+        text-align: justify; /* Rata kiri dan kanan */
+    }
+
+    .right-section {
+        text-align: justify; /* Supaya seluruh isi di bagian kanan juga rata */
+    }
+
+
+    .cv-container {
+        width: 794px;  /* Lebar sesuai ukuran A4 */
+        height: 1200px; /* Tinggi sesuai ukuran A4 */
+        background-color: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .header {
+        display: flex;
+        align-items: center;
+        background-color: #ff66a3;
+        color: white;
+        padding: 20px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .header img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid white;
+        margin-right: 20px;
+    }
+
+    .header .name {
+        flex-grow: 1;
+    }
+
+    .header h1 {
+        font-size: 60px;
+        margin: 0;
+    }
+
+    .header p {
+        font-size: 20px;
+        background-color: white;
+        color: #ff66a3;
+        padding: 8px 12px;
+        border-radius: 10px;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 5px;
+    }
+
+    .content {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .left-section {
+        width: 40%;
+        padding: 20px;
+        background-color: #ff66a3;
+        color: white;
+        border-radius: 0 0 0 15px;
+    }
+
+    /* Ukuran Font & Warna pada Kontak, Social Media, dan Hobi*/
+    .info-container {
+        margin-bottom: 55px; 
+    }
+
+    .info-container h3 {
+        font-size: 25px;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+
+    .info-list {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .info-list a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    /*-----------------------------------------------------------*/
+
+    .right-section {
+        width: 60%;
+        padding: 20px;
+        border-radius: 0 0 15px 0;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    .section h2 {
+        font-size: 22px;
+        color: #ff66a3;
+        margin-bottom: 10px;
+    }
+
+    .section ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .section ul li {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #444;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .social-icons a img {
+        width: 45px;
+        height: 45px;
+        transition: transform 0.3s ease-in-out;
+        background: none;
+        border-radius: 0;
+        border: none;
+    }
+
+    .social-icons a img:hover {
+        transform: scale(1.2);
+    }
+
+    .left-section h3 {
+        font-size: 20px;
+        border-bottom: 2px solid white; /* Garis putih di bawah */
+        padding-bottom: 9px;
+        margin-bottom: 26px;
+
+    }
+
+    
+
+    .timeline {
+        position: relative;
+        padding-left: 17px;
+        border-left: 2px solid #2d4f91;
+    }
+
+    .timeline-dot {
+        width: 13px;
+        height: 13px;
+        background: #2d4f91;
+        border-radius: 50%;
+        border: 2px solid white;
+        position: absolute;
+        left: -7px;
+        z-index: 2;
+    }
+    .timeline-content {
+        margin-left: -5px;
+    }
+    .timeline-item:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background: #2d4f91;
+        top: 5000px;
+        bottom: -20px;
+        left: -2px;
+    }
+    .right-section {
+        background-color: #a7c5f6;
+        padding: 20px;
+        border-radius:15 0 0 0px;
+    }
+
+    .section-title + hr {
+        margin-top: -5px;  /* Mengurangi jarak antara garis dan konten di bawahnya */
+        margin-bottom: 15px; /* Jarak bawah garis ke isi */
+        
+    }
+
+    .section-title {
+        font-size: 20px; /* Ubah angka ini sesuai keinginan */
+        font-weight: bold;
+        color: #000000; /* Bisa diganti sesuai keinginan */
+    }
+
+
+    .section-title + hr {
+        border: 1.5px solid #ffffff; /* Ubah warna dan ketebalan */
+        width: 450px; /* Bisa disesuaikan agar lebih pendek */
+    }
+
+    .skills {
+        margin-top: 20px;
+        background-color: #dfe8ff; /* Warna background sesuai gambar */
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .skills h3 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #1a237e; /* Warna teks */
+        margin-bottom: 10px;
+    }
+    
+    body {
+        font-size: 11.2px;
+    }
